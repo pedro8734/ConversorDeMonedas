@@ -1,41 +1,58 @@
-# # 💱 Conversor de Monedas
+# 🌍 Conversor de Monedas
 
-Aplicación de consola desarrollada en **Java** que permite convertir entre monedas latinoamericanas y el dólar estadounidense utilizando una **API de tasas de cambio** en tiempo real. Incluye un historial de conversiones y una interfaz de usuario por consola.
+Una aplicación de consola desarrollada en **Java** que permite convertir monedas entre distintas divisas utilizando una API de tasas de cambio en tiempo real.
+
+## 📌 Características
+
+- Conversión entre monedas como COP, USD, ARS, BRL y VES.
+- Obtención de tasas actualizadas mediante una API externa.
+- Menú interactivo en consola.
+- Registro de conversiones en historial.
+- Código limpio y organizado siguiendo principios de programación orientada a objetos.
+
+---
+
+## 🔗 API Utilizada
+
+La aplicación utiliza la siguiente API gratuita para obtener los tipos de cambio:
+
+- 🌐 [ExchangeRate API](https://www.exchangerate-api.com/)  
+  Endpoint de ejemplo:  
+  `https://v6.exchangerate-api.com/v6/TU_API_KEY/latest/USD`
+
+**⚠️ Nota:** Necesitas una clave de API (API Key) gratuita. Puedes obtenerla registrándote en el sitio oficial.
 
 ---
 
-## 🧰 Tecnologías y herramientas utilizadas
+## 🛠️ Herramientas y Tecnologías
 
-- 💻 **Lenguaje:** Java 17  
-- 🔧 **IDE:** IntelliJ IDEA  
-- 🌐 **API REST:** ExchangeRate API (para obtener tasas de cambio)  
-- 🧪 **Librerías externas:**
-  - `java.net.http.HttpClient` (peticiones HTTP)
-  - `Gson` (parseo de JSON)
-- 💾 **Control de versiones:** Git  
-- ☁️ **Repositorio remoto:** GitHub  
+- 💻 Java 17+
+- 🧠 Programación Orientada a Objetos (POO)
+- 🌐 HttpClient (para realizar peticiones a la API)
+- 📦 Gson (para convertir JSON a objetos Java)
+- 🔧 IntelliJ IDEA (IDE utilizada)
+- 🗂️ Git y GitHub (control de versiones y repositorio)
 
 ---
-## 🎯 Funcionalidades
 
-- Conversión de:
-  - Pesos Colombianos ↔ Dólar Estadounidense
-  - Pesos Argentinos ↔ Dólar Estadounidense
-  - Reales Brasileños ↔ Dólar Estadounidense
-  - Bolívares Venezolanos ↔ Dólar Estadounidense
-  - Acceso a tasas de cambio actualizadas
-  - Registro en memoria de todas las conversiones realizadas
-  - Menú interactivo por consola
+## ⚙️ Requisitos de Instalación
+
+Antes de ejecutar el proyecto, asegúrate de tener instalado lo siguiente:
+
+- ✅ [Java JDK 17 o superior](https://www.oracle.com/java/technologies/javase-downloads.html)
+- ✅ [Git](https://git-scm.com/)
+- ✅ Conexión a internet (para acceder a la API)
+- ✅ Una cuenta en [ExchangeRate-API](https://www.exchangerate-api.com/) para obtener tu clave
 
 ---
-## 🗂️ Estructura del proyecto
-ConversorDeMonedas/
-│
-├── src/
-│ ├── Principal.java # Clase principal con el menú de opciones
-│ ├── ServicioDeConversion.java # Lógica de conexión con API y cálculo
-│ ├── RegistroConversion.java # Historial de conversiones
-│ └── Monedas.java # Clase para mapear respuesta JSON
+
+## 🚀 Ejecución del Proyecto
+
+1. **Clonar el repositorio:**
+
+```bash
+git clone https://github.com/pedro8734/ConversorDeMonedas.git
+cd ConversorDeMonedas
 
 👨‍💻 Autor
 Pedro
