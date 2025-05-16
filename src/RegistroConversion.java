@@ -1,4 +1,5 @@
 import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 
 public class RegistroConversion {
     private final String monedaOrigen;
@@ -17,7 +18,9 @@ public class RegistroConversion {
 
     @Override
     public String toString() {
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd-MM-yyyy HH:mm");
+        String fechaFormateada = fechaHora.format(formatter);
         return String.format("[%s] %.2f %s => %.2f %s",
-                fechaHora, cantidadOriginal, monedaOrigen, cantidadConvertida, monedaDestino);
+                fechaFormateada, cantidadOriginal, monedaOrigen, cantidadConvertida, monedaDestino);
     }
 }

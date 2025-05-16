@@ -7,18 +7,21 @@ public class Principal {
         boolean salir = false; // Controla la salida del programa
 
         while (!salir) { // Bucle principal del menú
-            System.out.println("\n=== ******* CONVERSOR DE MONEDAS ****** ===");
-            System.out.println("1) Pesos Colombianos -> Dólar USA");
-            System.out.println("2) Dólar USA -> Pesos Colombianos");
-            System.out.println("3) Pesos Argentinos -> Dólar USA");
-            System.out.println("4) Dólar USA -> Pesos Argentinos");
-            System.out.println("5) Reales Brasileños -> Dólar USA");
-            System.out.println("6) Dólar USA -> Reales Brasileños");
-            System.out.println("7) Bolívares de Venezuela -> Dólar USA");
-            System.out.println("8) Dólar USA -> Bolívares de Venezuela");
-            System.out.println("9) Ver historial de conversiones");
-            System.out.println("10) Salir");
-            System.out.print("Elige una opción: ");
+            System.out.println("╔══════════════════════════════════════╗");
+            System.out.println("║       🌎 CONVERSOR DE MONEDAS       ║");
+            System.out.println("╠══════════════════════════════════════╣");
+            System.out.println("║ 1. 💵 COP → USD                      ║");
+            System.out.println("║ 2. 💵 USD → COP                      ║");
+            System.out.println("║ 3. 💵 ARS → USD                      ║");
+            System.out.println("║ 4. 💵 USD → ARS                      ║");
+            System.out.println("║ 5. 💵 BRL → USD                      ║");
+            System.out.println("║ 6. 💵 USD → BRL                      ║");
+            System.out.println("║ 7. 💵 VES → USD                      ║");
+            System.out.println("║ 8. 💵 USD → VES                      ║");
+            System.out.println("║ 9. 📜 Ver historial                  ║");
+            System.out.println("║ 0. ❌ Salir                          ║");
+            System.out.println("╚══════════════════════════════════════╝");
+            System.out.print("Seleccione una opción: ");
             int opcion = scanner.nextInt();
 
             if (opcion == 10) {

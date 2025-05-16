@@ -72,10 +72,16 @@ public class ServicioDeConversion {
     // Muestra todas las conversiones realizadas hasta el momento
     public void mostrarHistorial() {
         if (historial.isEmpty()) {
-            System.out.println("No hay conversiones registradas.");
+            System.out.println("🔔 No hay conversiones registradas aún.");
         } else {
-            System.out.println("\n--- Historial de Conversiones ---");
-            historial.forEach(System.out::println);
+            System.out.println("\n📜 HISTORIAL DE CONVERSIONES");
+            System.out.println("══════════════════════════════════════════════════════════════════");
+
+            for (int i = 0; i < historial.size(); i++) {
+                System.out.printf("%d. %s\n", i + 1, historial.get(i).toString());
+            }
+
+            System.out.println("══════════════════════════════════════════════════════════════════");
         }
     }
 }
