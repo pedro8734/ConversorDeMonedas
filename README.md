@@ -26,7 +26,7 @@ La aplicación utiliza la siguiente API gratuita para obtener los tipos de cambi
 
 ## 🛠️ Herramientas y Tecnologías
 
-- 💻 Java 17+
+- 💻 Java 24
 - 🧠 Programación Orientada a Objetos (POO)
 - 🌐 HttpClient (para realizar peticiones a la API)
 - 📦 Gson (para convertir JSON a objetos Java)
@@ -39,7 +39,7 @@ La aplicación utiliza la siguiente API gratuita para obtener los tipos de cambi
 
 Antes de ejecutar el proyecto, asegúrate de tener instalado lo siguiente:
 
-- ✅ [Java JDK 17 o superior](https://www.oracle.com/java/technologies/javase-downloads.html)
+- ✅ [Java JDK 24](https://www.oracle.com/java/technologies/javase-downloads.html)
 - ✅ [Git](https://git-scm.com/)
 - ✅ Conexión a internet (para acceder a la API)
 - ✅ Una cuenta en [ExchangeRate-API](https://www.exchangerate-api.com/) para obtener tu clave
